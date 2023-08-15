@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material-module';
 import { FormsModule } from '@angular/forms';
+import { ManagerService } from './services/manager/manager.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     AppMaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ ManagerService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

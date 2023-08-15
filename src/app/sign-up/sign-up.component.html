@@ -43,11 +43,11 @@
           </mat-form-field>
         </div>
 
-          <mat-checkbox formControlName="changeAcceptTerms" (change)="changeAcceptTerms($event)" class="example-margin">Check me!</mat-checkbox>
+          <mat-checkbox  (change)="changeAcceptTerms($event)" class="example-margin">Check me!</mat-checkbox>
           
 
           
-          <button mat-flat-button  color="primary">Primary</button>
+          <button mat-flat-button (click)="onSubmit()" [disabled]="!this.acceptTerms || !this.signUpForm.valid" color="primary">Primary</button>
         
       </form>
 
