@@ -1,0 +1,24 @@
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+mat-card {
+  width: 400px;
+}
+
+mat-card-content{
+  padding: 25px;
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+.password-container{
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
